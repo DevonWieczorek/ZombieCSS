@@ -31,7 +31,7 @@ Zombie.kill(); // Destroys the Mutation Observer and stops listening for changes
 ### Including the Script
 To include ZombieCSS in your project, simply paste the following tag into the head of your document:
 ```html
-<script type="text/javascript" src="https://cdn.rawgit.com/DevonWieczorek/ZombieCSS/7eb94740/zombie.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/DevonWieczorek/ZombieCSS/30723a5b/zombie.js"></script>
 ```
 
 ### Qwirks and Limitations
