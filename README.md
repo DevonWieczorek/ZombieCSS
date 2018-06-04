@@ -19,13 +19,13 @@ Although in most instances they will not be necesary, the Zombie object returns 
 ```javascript
 Zombie.zombie // Reference to the instance of the Zombie object
 
-Zombie.run() // Manually runs the main function
+Zombie.run(); // Manually runs the main function
 
-Zombie.live() // Creates the event listners for each "tab" containing styles
+Zombie.live(); // Creates the event listners for each "tab" containing styles
 
-Zombie.stalk() // Creates the Mutation Observer that listens to changes to the body
+Zombie.stalk(); // Creates the Mutation Observer that listens to changes to the body
 
-Zombie.kill() // Destroys the Mutation Observer and stops listening for changes
+Zombie.kill(); // Destroys the Mutation Observer and stops listening for changes
 ```
 
 ### Including the Script
