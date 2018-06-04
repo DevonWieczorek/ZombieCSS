@@ -42,4 +42,5 @@ To include ZombieCSS in your project, simply paste the following tag into the he
 - ZombieCSS is written in pure vanilla Javascript as to avoid any dependencies.
 - ZombieCSS automatically appends it's own stylesheet (which gets ignored by the program) and mobile-responsive meta tag to the head
 of your page.
+- Due to CORS policies, ZombieCSS can only effectively parse stylesheets of the same origin. Cross-domain stylesheets will be counted, but not parsed.
 - At the time of writing, ZombieCSS has been tested in Chrome, FireFox, and Edge.
