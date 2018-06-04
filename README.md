@@ -29,12 +29,15 @@ Zombie.kill() // Destroys the Mutation Observer and stops listening for changes
 ```
 
 ### Including the Script
-To include ZombieCSS in your project, simply paste the following tag into the <head> of your document:
+To include ZombieCSS in your project, simply paste the following tag into the head of your document:
 ```html
 <script type="text/javascript" src="https://cdn.rawgit.com/DevonWieczorek/ZombieCSS/7eb94740/zombie.js"></script>
 ```
 
 ### Misc
-- ZombieCSS automatically appends it's own stylesheet (which gets ignored by the program) and mobile-responsive meta tag to the <head>
+- ZombieCSS is written in pure vanilla Javascript as to avoid any dependencies.
+- ZombieCSS automatically appends it's own stylesheet (which gets ignored by the program) and mobile-responsive meta tag to the head
+of your page.
 - ZombieCSS has been observed to break certain pages that are built on Angular and React (my assumption is that this is a result of
-  basically everything in the document being built dynamically)
+  basically everything in the document being built dynamically).
+- At the time of writing, ZombieCSS has only been tested in Google Chrome.
