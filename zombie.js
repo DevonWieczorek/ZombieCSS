@@ -255,6 +255,8 @@ var Zombie = (function(){
       this.observer;
 
       this.stalk = function(){
+          var running = false;
+
           // Listen to the DOM for changes
           // Mutation observers are supported pretty widely, except IE which is 11+
           if(window.MutationObserver){
@@ -266,6 +268,7 @@ var Zombie = (function(){
                   setTimeout(function(){
                       // Re-create the obeserver
                       zombie.observer.observe(zombieTarget, zombieConfig);
+                      running = false;
                   }, 1000);
               }, 1000, false);
 
@@ -273,9 +276,13 @@ var Zombie = (function(){
                   mutations.forEach(function(mutation) {
                       // If it was a mutation to the target's children, rerun the program
                       if(mutation.type == 'childList' && mutation.addedNodes.length >= 1){
-                          wait();
                           // Prevent too many mutations at once (via the console)
-                          zombie.observer.disconnect();
+                          zombie.kill();
+                          if(!running){
+                              wait();
+                              running = true;
+                          }
+                          return false;
                       }
                   });
 
@@ -328,4 +335,4 @@ var Zombie = (function(){
           run: zombie.runZombieCSS,
           live: zombie.live
       };
-  }());
+ }());
