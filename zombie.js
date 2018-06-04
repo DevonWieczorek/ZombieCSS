@@ -285,7 +285,7 @@ var Zombie = (function(){
               zombie.observer = new MutationObserver(zombieHandleMutations);
 
               // Configuration of the observer (only listen for new elements):
-              var zombieConfig = { attributes: false, childList: true, subtree: true, characterData: false };
+              var zombieConfig = { attributes: false, childList: true, subtree: false, characterData: false };
 
               // Pass in the target node, as well as the observer options
               zombie.observer.observe(zombieTarget, zombieConfig);
