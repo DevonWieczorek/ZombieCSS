@@ -143,7 +143,7 @@ var Zombie = (function(){
       this.runZombieCSS = function(){
 
           // Limit the number of times this can be run per page load
-          if(zombie.current_refreshes == zombie.MAX_REFRESHES){
+          if(zombie.current_refreshes >= zombie.MAX_REFRESHES){
               zombie.kill();
               zombie.runZombieCSS = function(){};
               Zombie.run = function(){};
