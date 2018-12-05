@@ -29,7 +29,7 @@ var Zombie = (function(){
           style.type = 'text/css';
           style.id = 'zombieStyles';
           // Update if you change the location or self-host
-          style.href = 'https://cdn.rawgit.com/DevonWieczorek/ZombieCSS/a81d8f4e/zombieStyles.css'; 
+          style.href = 'https://cdn.jsdelivr.net/gh/DevonWieczorek/ZombieCSS@73a1fa8d7de62049ec589d3101d7ed4b04fa3425/zombieStyles.css'; 
           document.getElementsByTagName('head')[0].appendChild(style);
       }
 
