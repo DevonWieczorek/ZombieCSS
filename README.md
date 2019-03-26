@@ -28,12 +28,6 @@ Zombie.stalk(); // Creates the Mutation Observer that listens to changes to the 
 Zombie.kill(); // Destroys the Mutation Observer and stops listening for changes
 ```
 
-### Including the Script
-To include ZombieCSS in your project, simply paste the following tag into the head of your document:
-```html
-<script type="text/javascript" src="https://cdn.rawgit.com/DevonWieczorek/ZombieCSS/30723a5b/zombie.js"></script>
-```
-
 ### Qwirks and Limitations
 - ZombieCSS has been observed to break certain pages that are built on Angular and React (my assumption is that this is a result of
   basically everything in the document being built dynamically).
