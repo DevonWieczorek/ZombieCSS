@@ -44,3 +44,8 @@ To include ZombieCSS in your project, simply paste the following tag into the he
 of your page.
 - Due to CORS policies, ZombieCSS can only effectively parse stylesheets of the same origin. Cross-domain stylesheets will be counted, but not parsed.
 - At the time of writing, ZombieCSS has been tested in Chrome, FireFox, and Edge.
+
+***
+
+# Updates:
+- On 3/26/2019 this repository was updated to the Chrome Extension version of ZombieCSS. Mutation Observers are no longer supported but may be re-added in the future.
