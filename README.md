@@ -48,4 +48,6 @@ of your page.
 ***
 
 # Updates:
-- On 3/26/2019 this repository was updated to the Chrome Extension version of ZombieCSS. Mutation Observers are no longer supported but may be re-added in the future.
+- On 3/26/2019 this repository was updated to the Chrome Extension version of ZombieCSS. 
+-- Mutation Observers are no longer supported but may be re-added in the future.
+-- `Zombie.stalk()` and `Zombie.kill()` have been removed as a result of this change.
